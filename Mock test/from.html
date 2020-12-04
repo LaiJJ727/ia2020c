@@ -11,7 +11,7 @@
                   <input type="text" id="Last Name" name="lastname">
                   <br><br>
                   <label for="contact number">Contact number (HP):</label><br>
-                  <input type="text" id="contact number" name="lname"><br>
+                  <input type="text" id="contact number" name="contact number"><br>
                   <br><br>
                   <label for="booking date">Booking Date: &nbsp;</label>
                   <input type="date" name="booking date" id="booking date"/><br>
@@ -22,38 +22,40 @@
                   <legend>Room Availability</legend> 
                  
                     <label for="Deluxe Room">Deluxe Room</label>
-                    <input style="margin-left:14px" name="Deluxe Room" id="Deluxe Room" 
-                         type="number" value="0"
-                         min="0" max="10" step="1" /><br>
+                    <input style="margin-left:14px" name="Deluxe Room" id="Deluxe Room" type="number" value="0"min="0" max="10" step="1" /><br>
                     <label for="Standard Room">Standard Room&nbsp;</label>
-                    <input name="Deluxe Room" id="Deluxe Room" 
-                    type="number" value="0"
-                    min="0" max="10" step="1" /><br>
+                    <input name="Standard Room" id="Standard Room" type="number" value="0"min="0" max="10" step="1" /><br>
                     <label for="Jungle Cabin">Jungle Cabin&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                    <input name="Deluxe Room" id="Deluxe Room" 
-                         type="number" value="0"
-                         min="0" max="10" step="1" /><br>
+                    <input name="Jungle Cabin" id="Jungle Cabin" type="number" value="0"  min="0" max="10" step="1" /><br>
                 </fieldset>
                 <br><br>    
 
                 <label for="email">E-mail:</label><br>
                 <input type="email" name="email" id="email"><br>
                 <br><br>
-               
+
                 <label for="Subscribe for future promotion">Subscribe for future promotion:</label><br>
                 <label for= "sYes">Yes</label>
-                <input type="radio" name="serviceFriendly" id="sYes"
-                       value="yes" />
+                <input type="radio" name="sYes" id="sYes"value="yes">
  
                 <label for= "sNo">No</label>
-                <input type="radio" name="serviceFriendly" id="sNo"
-                       value="no" /><br>
-
-               
+                <input type="radio" name="sYes" id="sNo" value="no"><br>
+                       
             </fieldset>
         </form>
   
-
+        <form>
+         <fieldset>
+            <legend>hhh</legend>
+         <input type="radio" id="male" name="male" value="male">
+         <label for="male">Male</label>
+         <input type="radio" id="female" name="male" value="female">
+         <label for="female">Female</label><br>
+         <input type="radio" id="other" name="male" value="other">
+         <label for="other">Other</label><br><br>
+         <input type="submit" value="Submit">
+      </fieldset>
+       </form> 
         <section>
             <p>Required values are marked by an asterisk (*)</p>
             <form id="survey" name="survey" action="http://www.redballpizza.com/cgi-bin/survey"
@@ -102,7 +104,7 @@
                             <option value="Big Kahuna Pizza" />
                             <option value="BBQ Chicken Pizza" />
                             <option value="Mediterranean Herb Pizza" />
-                            <option value="Pasta Rolls" />
+                            <option value="Pasta Rolls" >
                             <option value="Pesto Artichoke Pizza" />
                             <option value="Sal's Stuffed Pizza" />
                             <option value="Wing'd Pizza" />

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<meta charset="utf-8">
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <title>lalalala</title>
+</head>
+<style>
+    #show:after{
+        content: "";
+        display: inline-block;
+        height: 18px;
+        position: relative;
+        border-right: solid 1px #666;
+        top: 4px;
+        left: 0px;
+        opacity: 0;
+    }
+    .pad-input:focus + #show:after{
+        animation: mymove 1.2s infinite;
+    }
+
+    @keyframes mymove
+    {
+        0%   {opacity: 0;}
+        25%  {opacity: 0;}
+        75%  {opacity: 1;}
+        100% {opacity: 0;}
+    }
+</style>
+<body>
+<div style="position: relative;width: 200px;">
+    <input type="password" autocomplete="off" class="pad-input" style="height: 30px;width: 100%;">
+    <div id="show" style="position: absolute;left: 2px;top:50%;transform: translate(0,-50%);border: none;height: 28px;pointer-events: none;background: #fff;width: 98%;" disabled>
+        <span></span>
+    </div>
+</div>
+<script>
+    var obj = {};
+    Object.defineProperty(obj, 'txt', {
+        get: function () {
+            return obj;
+        },
+        set: function (newValue) {
+            document.getElementById('show').getElementsByTagName('span')[0].innerHTML  = newValue;
+        }
+    });
+    document.getElementsByClassName("pad-input")[0].addEventListener('keyup', function (e) {
+        obj.txt = e.target.value;
+    });
+</script>
+</body>
+</html>

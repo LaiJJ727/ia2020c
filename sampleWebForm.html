@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        label{
+            display:block;
+            clear:left;
+            float:left;
+            width:40%;
+        }
+
+        input, select{
+            display:block;
+            width: 20%;
+            margin-right:20%;
+            margin-left:20%
+        }
+        
+
+        fieldset.statusgroup label{
+            display: inline;
+            float: none; 
+        }
+    
+        fieldset.statusgroup input {
+            display: inline;
+            float: none;
+        }
+
+    </style>
+</head>
+<body>
+    <form method="post" action="data.php">
+        <fieldset>
+            <legend>Login information</legend>
+            <label for="name">Name:</label> 
+            <input type="text" name="name" id="name" value="alice"/>
+            <br/>
+            <label for="pswd">Password:</label>
+            <input type="password" maxlength="10"name="password" id="pswd" placeholder="write your password"/>
+            <br>
+            <label for="program">Program</label>
+            <select style="width:306px;"size="1" name="program" id="program">
+                <optgroup label="FEIT">
+                <option>Diploma in Computer Science</option>
+                <option>Diploma in Information Technology</option>
+                <option selected>Bachelor in Software Engineering</option>
+                </optgroup>
+                <optgroup label="FBM">
+                    <option>Diploma in Business Administration</option>
+                </optgroup>
+            </select>
+            <br>
+            <label for="status">Status:</label>
+            <fieldset class="statusgroup" style="width:278px;">
+            
+            </div>
+            <input type="radio" name="status" id="fullTime" value="fullTime"/>          
+            <label for="fullTime">Full Time</label>
+            <input type="radio" name="status" id="partTime" value="partTime" checked="checked"/>
+            <label for="partTime">Part Time</label>
+            
+            </fieldset>
+            <br>
+            <label for="add">Address</label>
+            <textarea name="add" id="add" row="3" cols="80" style="float:right;"></textarea>
+            <br>
+            <label>do you want to subscribe?</label>
+            <div style="padding-bottom:0%; padding-top:0%; padding-right:57%; padding-left:39%; position:relative;">
+            <input type="checkbox" checked>
+            </div>
+            <input style="padding-bottom:0%; padding-top:0%; padding-right:57%; padding-left:39%; position:relative;" type="checkbox" checked><br>
+            <label style="width: 45%">Do you want to subscribe?<input type="checkbox" checked name="subscribe" style="float:right"></label>
+        </fieldset>
+    </form>
+</body>
+</html>
