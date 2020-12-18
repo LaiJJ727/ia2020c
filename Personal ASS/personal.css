@@ -1,0 +1,43 @@
+#page{
+  background-color:#FFF5F3;
+  border-top: 0px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom:0%;
+  color:black;
+
+}
+.Exterior{
+  border:1px solid black;
+  background-color: white;
+  margin-left:8%;
+  margin-right:8%;
+
+}
+#img {
+    text-align:center;
+  }
+.perfomance{
+    border:1px solid black;
+    background-color:white;
+    margin-top:2%;
+    margin-left:8%;
+    margin-right:8%;
+}
+.footers{          
+  bottom: 0;
+  width: 100%;
+  background-color:black;
+  height:100px;
+}
+footer{
+  position:absolute;
+  width: 100%;
+  background-color: black;
+  height:100px;
+}
+#search{
+  display:block;
+  float: right;
+  margin-top:0%;
+}

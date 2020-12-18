@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <BODY>
+        <script src="C:/Users/user/Documents/ia2020c/java/try.js"></script>
+        <h2>Today is</h2>
+  <script>
+      var myDate=new Date()
+      var month = myDate.getMonth()+1
+      var day  = myDate.getDate()
+      var year = myDate.getFullYear()
+      document.write(month+"/"+day+"/"+ year)
+
+      var userName
+      userName=prompt("Please enter your name")
+      document.write("<h3>Hello "+ userName+"</h3>")
+
+  
+      function validateForm() {
+         var x = document.forms["myForm"]["userName"].value;
+        var y= document.getElementById("userAge").value;
+          if (x == "") {
+             alert("Name fill in name");
+             return false;
+          }
+          if (y <=18 && y>=1){
+            alert("You not a Adult");
+            return false;
+          }
+          if(y==0){
+            alert("PLease input again"); 
+            return false;
+          }
+    }
+    </script>
+    <form name="myForm"  onsubmit="return validateForm()" method="post">
+        <label for="userName">Name</label>
+        <input type="text" name="userName" id="userName"><br>
+        <label for="userAge">Age:&nbsp;&nbsp;</label>
+        <input type="text" name="userAge" id="userAge"  onkeyup="value=value.replace(/[^/d]/g,'')"><br>
+        <input type="submit" value="Send Information">
+    </form>
+    </BODY>
+
+</html>

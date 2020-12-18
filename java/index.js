@@ -24,3 +24,26 @@ for(var x=0; x<=5; x++){
      w=w+x;
     console.log("x="+w);
 }
+//exercise 1
+function addvalue(a,b){
+    console.log(a+b);
+}
+addvalue(2,4);
+
+//exercise2
+
+function calculatePuppyAge(age,sex){
+    var puppyAge = 7*age;
+    console.log("Your doggie age is"+ puppyAge+"compare to human")
+}
+
+calculatePuppyAge(10,",female");
+calculatePuppyAge(2,",male");
+
+//exercise3
+function minusvalue(a,b){
+    console.log(a-b);
+}
+minusvalue(9,2);
+
+//exercise4
